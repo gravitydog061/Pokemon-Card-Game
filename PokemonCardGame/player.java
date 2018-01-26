@@ -21,12 +21,13 @@ public class player
         System.out.println(name); //test code?
     }
 
-    public void attack(String n){
+    public void attack(){
         //random damage
         int damage = (int) (Math.random() * 15 + 15); //+ 15 is needed to keep damage from being 0. range = 15 to 30.
         health = health -= damage; //subtracts damage amount from health
-        System.out.println(health);
+        System.out.println(damage + " " + health);
         turn = false; //ends turn
+
         //attack a specific pokemon
     }
 
@@ -38,14 +39,14 @@ public class player
 
     public void turn(){
         //choose what to do; attack, defend, item?
-        if(choice == "attack"){
+        if(choice.equals("attack")){
             //choose who to attack
-            this.attack(d.pokemon[0]); //place holder name convert to user input
+            this.attack(); //place holder name convert to user input
         }
-        else if (choice == "defend"){
+        else if (choice.equals("defend")){
             this.defend();
         }
-        else if (choice == "item"){
+        else if (choice.equals("item")){
             System.out.println("You used a potion.");
             if (health <= 80){
                 health += 20; //heals 20 health
