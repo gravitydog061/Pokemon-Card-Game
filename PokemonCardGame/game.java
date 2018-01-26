@@ -12,9 +12,6 @@ public class game
     static deck d = new deck();
     //Determines number of players
     static int numOfPlayers = 2;
-    //Tells program whos turn it is
-    static boolean p1Turn = false;
-    static boolean p2Turn = false;
     //Simple "coin toss" to decide who goes first
     static int playerTurn = (int)(Math.random() * numOfPlayers);
 
@@ -23,23 +20,22 @@ public class game
         player p1 = new player();
         player p2 = new player();
         //give players pokemon
-        System.out.println("---Pokemon Names---");
+        System.out.println("---Pokemon Names---");//seperation code
         p1.setName(d.pokemon[0]);
         p2.setName(d.pokemon[1]);
         //Game is active until one player's health = 0
         while (p1.health >= 0 || p2.health >= 0){
             //tells program who's turn it is
             if (playerTurn == 1){ 
-                p1Turn = true;
+                p1.turn = true;
             }
             else{
-                p2Turn = true;
+                p2.turn = true;
             }
             
-            while (p1Turn){
+            while (p1.turn){
                 p1.turn();
-                p1Turn = false;
-                p2Turn = true;
+                p2.turn = true;
                 break;
             }
 
