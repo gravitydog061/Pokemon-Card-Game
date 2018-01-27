@@ -37,6 +37,7 @@ public class game
             }
 
             while (p1.turn){
+                System.out.print("Player 1, would you like to attack, defend, or use item? ");
                 p1.turn();
                 playerTurn = 1;
                 p2.turn = true;
@@ -44,6 +45,7 @@ public class game
             }
 
             while (p2.turn){
+                System.out.print("Player 2, would you like to attack, defend, or use item? ");
                 p2.turn();
                 p2.turn = false;
                 p3.turn = true;
@@ -51,6 +53,7 @@ public class game
             }
 
             while (p3.turn){
+                System.out.print("Player 3, would you like to attack, defend, or use item? ");
                 p3.turn();
                 p3.turn = false;
                 p1.turn = true;
