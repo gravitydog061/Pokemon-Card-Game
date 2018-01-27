@@ -9,7 +9,7 @@ public class game
 {
     static deck d = new deck();
     //Determines number of players
-    static int numOfPlayers = 2;
+    static int numOfPlayers = 3;
     //Simple "coin toss" to decide who goes first
     static int playerTurn = (int)(Math.random() * numOfPlayers);
 
