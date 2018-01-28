@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=player
+comment0.text=\r\n\ Players\ are\ given\ all\ necessary\ things\ fo\ this\ game\ to\ run.\r\n\r\n\ @author\ Zach\ Zimmerman\r\n\ @version\ 1.24.18\r\n
+comment1.params=t
+comment1.target=void\ setName(java.lang.String)
+comment2.params=
+comment2.target=void\ attack()
+comment3.params=
+comment3.target=void\ turn()
+numComments=4
