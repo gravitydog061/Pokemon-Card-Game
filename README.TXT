@@ -10,5 +10,5 @@ VERSION or DATE:
 HOW TO START THIS PROJECT: Run the Runner class
 AUTHORS: Zach Zimmerman, Chris Hicks, and Christain Roderiguez
 USER INSTRUCTIONS: Players are given pokemon at random. A user is randomly selected to go first. 
-The user then enters either "attack", "defend", or "use item". When user turn ends the next user goes.
+The user then enters either "attack" or use "item". Attacking will deal a random number of damage to the other player. When user turn ends the next user goes.
 The game continues until one player's pokemon has 0 health left.
