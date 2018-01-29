@@ -46,7 +46,11 @@ public class game
                 currentPlayer = 1;
                 break;
             }
-
+            if(p2Health <= 0){
+                gameInProgress = false;
+                System.out.println("Player 2's pokemon has 0 health remaining. Player 1 wins!");
+                break;
+            }
             while (currentPlayer == 1){
                 System.out.print("Player 2, would you like to attack or use item? ");
                 temp = p2.name;
@@ -55,15 +59,12 @@ public class game
                 currentPlayer = 0;
                 break;
             }
-
             if(p1Health <= 0){
                 gameInProgress = false;
                 System.out.println("Player 1's pokemon has 0 health remaining. Player 2 wins!");
+                break;
             }
-            if(p2Health <= 0){
-                gameInProgress = false;
-                System.out.println("Player 2's pokemon has 0 health remaining. Player 1 wins!");
-            }
+            
         }
     }
 
