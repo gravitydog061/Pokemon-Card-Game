@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=deck
+comment1.params=pokemon
+comment1.target=void\ shuffle(java.lang.String[])
+numComments=2
